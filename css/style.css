@@ -8,15 +8,122 @@ Font References:
 Open+Sans:400,700
 Roboto:500
 */
+
+/* Layout styling */
+* {
+    box-sizing: border-box;
+}
 body {
     background color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.6
+    line-height: 1.6;
+    margin: 3.0em;
+}
+header {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    background-color: lightblue;
+    border-bottom: 3px solid #674DA8;
+    text-align: center;
+    padding: 0.25em;
+    box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
+    box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
+    box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
+    
+}
+nav {
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+    padding: 0.25em;
+    height: 11.5em;
+    text-align: center; 
+}
+nav.navbar {
+    text-align: center;
+    
+    margin: 0em;
+ }
+.navcontainer {
+    display: inline-flex;
+    text-align: center;
+    align-content: center;
+    margin: 0em;
+}
+img.logo {
+    padding-left: 2.5em;
+    padding-right: 1em;
+    max-width: 250px;
+    text-align: center;
+}
+.navilinks {
+    text-align: center;
+     margin: 0em; 
+}
+.navilinks > ul {
+    list-style-type: none;
+    padding: 0;
+}
+.navilinks > ul > li {
+    display:inline-block
+}
+.navilinks > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #674DA8;
+}
+.navilinks > ul > li > a:visited {
+ padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4E79B2;
+}
+.navilinks > ul > li > a:active {
+ padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #674DA8;
+}
+.navilinks > ul > li > a:hover {
+ padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #cc6540;
+}
+.container-intro {
+    padding: 1.625em;
+    padding-top: 12.0em;
+}
+#main-section {
+    padding: 0.75em;
+    padding-top: 4.0em;
 }
 img {
  width: 100%;
+}
+#hero {
+    background-color: lightblue;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+}
+.container {
+    padding: 0 15px;
+}
+.row {
+    margin: 25px 0;
+}
+.tatmap {
+    padding: 1.0em;
+    text-align: center;
+}
+.aboutme {
+    float:left;
+    padding-right: 2.0em;
 }
 h1, h2, h3, h4 {
     font-family: 'Roboto', sans-serif
@@ -54,7 +161,7 @@ a:active { /* selected link */
   color: #674DA8;
 }
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: #674DA8;
   color: #ffffff !important; /* needed to override the default link color */
   font-weight: 400;
@@ -64,7 +171,7 @@ a:active { /* selected link */
   transition: 0.2s opacity;
 }
 .button:hover {
-       opacity: 0.5; /* Reduces the opacity of the button to 80% */
+       opacity: 0.5;
   text-decoration: none;
 }
 .button-contact {
@@ -77,9 +184,17 @@ a:active { /* selected link */
   background-color: #E88F4C;
   color: #ffffff 
 }
+.footer-contact {
+    border-top: 2px solid #4E79B2;
+    border-bottom: 2px solid #4E79B2;
+    margin-top: 12px;
+    border-color: #4E79B2;
+    color: #000000;
+    padding: 1.0em;
+}
 .container-contact {
   display: inline-flex;
     width: 5.75em;
-  background: #FFFFFF;
+    background: #FFFFFF;
   margin:
 }
