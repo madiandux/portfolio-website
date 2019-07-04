@@ -16,7 +16,7 @@ Roboto:500
 body {
     background color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
     margin: 3.0em;
@@ -28,7 +28,7 @@ header {
     background-color: lightblue;
     border-bottom: 3px solid #674DA8;
     text-align: center;
-    padding: 0.25em;
+    padding: 0.15em;
     box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
     box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
     box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
@@ -110,6 +110,10 @@ img {
     display: inline-block;
     width: 100%;
     padding: 20px 0;
+    text-align: center;
+}
+#hero span {
+    display: block;
 }
 .container {
     padding: 0 15px;
@@ -123,7 +127,7 @@ img {
 }
 .aboutme {
     float:left;
-    padding-right: 2.0em;
+    padding-right: 1.0em;
 }
 h1, h2, h3, h4 {
     font-family: 'Roboto', sans-serif
@@ -133,7 +137,7 @@ h1 {
     font-size: 2.75em;
     font-weight: 500; '
 }
-h3 {
+h2 {
     font-size: 2.25em;
     font-weight: 500;
 }
@@ -197,4 +201,39 @@ a:active { /* selected link */
     width: 5.75em;
     background: #FFFFFF;
   margin:
+}
+[class*="col-"] {
+    float:left;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+header {
+    text-align: unset;
+    padding: 20px 0 13px;
+}
+nav {
+    width: auto;
+    float: right
+    margin-top: 4px;
+    }
+.col-md-6 {
+    width: 50%;
+    }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
