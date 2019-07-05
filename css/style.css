@@ -32,15 +32,15 @@ header {
     box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
     box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
     box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
-    
-}
+    }
 nav {
     display: inline-block;
     width: 100%;
     position: fixed;
     padding: 0.25em;
-    height: 11.5em;
+    height: 8.5em;
     text-align: center; 
+    align-content: center;
 }
 nav.navbar {
     text-align: center;
@@ -101,11 +101,12 @@ img.logo {
 #main-section {
     padding: 0.75em;
     padding-top: 4.0em;
+    overflow: 
 }
 img {
  width: 100%;
 }
-#hero {
+hero {
     background-color: lightblue;
     display: inline-block;
     width: 100%;
@@ -121,13 +122,18 @@ img {
 .row {
     margin: 25px 0;
 }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 .tatmap {
     padding: 1.0em;
     text-align: center;
 }
 .aboutme {
-    float:left;
     padding-right: 1.0em;
+    padding-bottom: 3.0em;
 }
 h1, h2, h3, h4 {
     font-family: 'Roboto', sans-serif
@@ -200,15 +206,7 @@ a:active { /* selected link */
   display: inline-flex;
     width: 5.75em;
     background: #FFFFFF;
-  margin:
-}
-[class*="col-"] {
-    float:left;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+    margin: 0.5em;
 }
 /* ==============================
 Medium devices (640px and larger)
@@ -226,6 +224,10 @@ nav {
 .col-md-6 {
     width: 50%;
     }
+[class*="col-"] {
+    float:left;
+}
+    
 }
 /* ==============================
 Large devices (1024px or larger)
