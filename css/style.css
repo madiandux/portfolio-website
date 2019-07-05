@@ -44,8 +44,7 @@ nav {
 }
 nav.navbar {
     text-align: center;
-    
-    margin: 0em;
+    margin: 0.5em;
  }
 .navcontainer {
     display: inline-flex;
@@ -105,6 +104,8 @@ img.logo {
 }
 img {
  width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 hero {
     background-color: lightblue;
@@ -123,9 +124,10 @@ hero {
     margin: 25px 0;
 }
 .row::after {
-    content: "";
+    content: "" ;
     clear: both;
     display: table;
+    
 }
 .tatmap {
     padding: 1.0em;
@@ -136,7 +138,7 @@ hero {
     padding-bottom: 3.0em;
 }
 h1, h2, h3, h4 {
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
     line-height: 1.4; 
     }
 h1 {
@@ -175,14 +177,15 @@ a:active { /* selected link */
   background-color: #674DA8;
   color: #ffffff !important; /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #674DA8; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  border-bottom: 2px solid #8979b0; /* width of the border, type, color */
+    transition-property: 0.2s opacity;
 }
 .button:hover {
-       opacity: 0.5;
-  text-decoration: none;
+    opacity: 3.0;
+text-decoration: none;    
 }
 .button-contact {
   background-color: #FFFFFF;
@@ -208,6 +211,18 @@ a:active { /* selected link */
     background: #FFFFFF;
     margin: 0.5em;
 }
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+    animation-duration: 10s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -218,14 +233,16 @@ header {
 }
 nav {
     width: auto;
-    float: right
+    float: right;
     margin-top: 4px;
     }
 .col-md-6 {
     width: 50%;
+    margin-top: 3.0em;
     }
 [class*="col-"] {
-    float:left;
+    padding: 1.0em;
+    float: left;
 }
     
 }
@@ -233,9 +250,31 @@ nav {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+    header {
+    text-align: unset;
+    padding: 30px 0 15px;
+}
+nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    }
+.col-md-6 {
+    width: 40%;
+    margin-top: 2.0em;
+    }
+[class*="col-"] {
+    padding: 2.0em;
+    float: left;
+}
+.container {
+    max-width: 1200px;
+    margin-bottom: auto;
+    margin-right: auto;
+    }
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-}
+   
