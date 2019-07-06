@@ -21,77 +21,66 @@ body {
     line-height: 1.6;
     margin: 3.0em;
 }
-header {
-    display: inline-block;
-    position: fixed;
+.nav {
+  background-color: lightblue;
+  height: 20px;
     width: 100%;
-    background-color: lightblue;
-    border-bottom: 3px solid #674DA8;
-    text-align: center;
-    padding: 0.15em;
-    box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
-    box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
-    box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
-    }
-nav {
-    display: inline-block;
-    width: 100%;
-    position: fixed;
-    padding: 0.25em;
-    height: 8.5em;
-    text-align: center; 
-    align-content: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+    width:auto;
+    float:right;
+    margin-top: 2.5em;
 }
-nav.navbar {
-    text-align: center;
-    margin: 0.5em;
- }
-.navcontainer {
-    display: inline-flex;
-    text-align: center;
-    align-content: center;
-    margin: 0em;
+.navbar {
+  background-color: lightblue;
+    border-bottom: 3px solid #674DA8;
+    padding: 0.15em;
+    margin-top: 4px;
+    box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
+    box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
+    box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
+    top: 0%;
+    transform: translateY(-4%);
 }
 img.logo {
-    padding-left: 2.5em;
-    padding-right: 1em;
-    max-width: 250px;
+    max-height: 100px;
+    max-width: 200px;
     text-align: center;
 }
-.navilinks {
+.navbar-header {
     text-align: center;
-     margin: 0em; 
 }
-.navilinks > ul {
+.navbar-header > ul {
     list-style-type: none;
     padding: 0;
 }
-.navilinks > ul > li {
-    display:inline-block
+.navbar-header > ul > li {
+    display:inline-block;
 }
-.navilinks > ul > li > a {
+.navbar-header > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #674DA8;
 }
-.navilinks > ul > li > a:visited {
+.navbar-header > ul > li > a:visited {
  padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #4E79B2;
 }
-.navilinks > ul > li > a:active {
+.navbar-header > ul > li > a:active {
  padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #674DA8;
 }
-.navilinks > ul > li > a:hover {
+.navbar-header > ul > li > a:hover {
  padding: 0 15px;
-    text-transform: uppercase;
+    text-transform: uppercase;  
     font-weight: 700;
-    color: #cc6540;
+    color: #cc6540;*/
 }
 .container-intro {
     padding: 1.625em;
@@ -100,10 +89,9 @@ img.logo {
 #main-section {
     padding: 0.75em;
     padding-top: 4.0em;
-    overflow: 
 }
 img {
- width: 100%;
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
@@ -124,14 +112,16 @@ hero {
     margin: 25px 0;
 }
 .row::after {
-    content: "" ;
+    content:"";
     clear: both;
     display: table;
-    
 }
-.tatmap {
+.casestudycontent {
     padding: 1.0em;
-    text-align: center;
+    text-align: left;
+    max-width: 1200px;
+    margin: 1.0em;
+    padding-top: 0.9em;
 }
 .aboutme {
     padding-right: 1.0em;
@@ -139,7 +129,7 @@ hero {
 }
 h1, h2, h3, h4 {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.4; 
+    line-height: 1.4;
     }
 h1 {
     font-size: 2.75em;
@@ -162,7 +152,7 @@ a {
   text-decoration: none; /* No underlining */
 }
 a:hover,
-a focus {
+a: focus {
   color: #cc6540;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
@@ -184,8 +174,9 @@ a:active { /* selected link */
     transition-property: 0.2s opacity;
 }
 .button:hover {
-    opacity: 3.0;
-text-decoration: none;    
+  background-color: #00000;
+  opacity: 3.0;
+  text-decoration: none;
 }
 .button-contact {
   background-color: #FFFFFF;
@@ -195,7 +186,7 @@ text-decoration: none;
 }
 .button-contact:hover {
   background-color: #E88F4C;
-  color: #ffffff 
+  color: #ffffff
 }
 .footer-contact {
     border-top: 2px solid #4E79B2;
@@ -210,6 +201,11 @@ text-decoration: none;
     width: 5.75em;
     background: #FFFFFF;
     margin: 0.5em;
+}
+.casestudy {
+  display: inline-block;
+  image-resolution: from-image;
+  padding: 1.0em;
 }
 @keyframes color-change {
   0% {fill: #edc655;}
@@ -227,38 +223,12 @@ text-decoration: none;
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-header {
-    text-align: unset;
-    padding: 20px 0 13px;
-}
-nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-    }
-.col-md-6 {
-    width: 50%;
-    margin-top: 3.0em;
-    }
-[class*="col-"] {
-    padding: 1.0em;
-    float: left;
-}
-    
+
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-    header {
-    text-align: unset;
-    padding: 30px 0 15px;
-}
-nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-    }
 .col-md-6 {
     width: 40%;
     margin-top: 2.0em;
@@ -277,4 +247,5 @@ nav {
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-   
+
+/*new nav test*/
