@@ -171,11 +171,10 @@ a:active { /* selected link */
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #8979b0; /* width of the border, type, color */
-    transition-property: 0.2s opacity;
+    transition-duration: 0.5s;
 }
 .button:hover {
-  background-color: #00000;
-  opacity: 3.0;
+  background-color: #a087de;
   text-decoration: none;
 }
 .button-contact {
