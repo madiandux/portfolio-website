@@ -129,7 +129,7 @@ nav nav-pills navbar-right {
 img {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 hero {
     background-color: lightblue;
@@ -256,11 +256,7 @@ a:active { /* selected link */
 }
 @media only screen and (max-width: 640px) {
 }
-img {
-     max-height: 100px;
-    max-width: 200px;
-    text-align: center;
-}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
