@@ -49,11 +49,13 @@ svg {
   height: 90%;
 }
 img.logo {
-    max-height: 100px;
+    max-height: 75px;
     max-width: 150px;
     text-align: center;
 }
 .navbar-header {
+    height: 100px;
+    width: 600px;
     position: relative;
     display: inline-flex;
 }
