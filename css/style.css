@@ -14,7 +14,7 @@ Roboto:500
     box-sizing: border-box;
 }
 body {
-    background color: #FFFFFF;
+    background-color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -23,7 +23,7 @@ body {
 }
 .nav {
   background-color: lightblue;
-  height: 20px;
+  height: 60px;
     width: 100%;
   display: inline-flex;
   justify-content: center;
@@ -35,7 +35,7 @@ body {
 .navbar {
   background-color: lightblue;
     border-bottom: 3px solid #674DA8;
-    height: 200px;
+    height: 150px;
     padding: 0.15em;
     margin-top: 4px;
     box-shadow: 4px 4px 13px 0px rgba(7, 87, 207, 0.65);
@@ -44,12 +44,18 @@ body {
     top: 0%;
     transform: translateY(-4%);
 }
+svg {
+  width: 90%;
+  height: 90%;
+}
 img.logo {
-    max-height: 100px;
+    max-height: 75px;
     max-width: 150px;
     text-align: center;
 }
 .navbar-header {
+    height: 100px;
+    width: 600px;
     position: relative;
     display: inline-flex;
 }
@@ -82,7 +88,7 @@ img.logo {
 }
 .navbar-header > ul > li > a:hover {
     padding: 0 15px;
-    text-transform: uppercase;  
+    text-transform: uppercase;
     font-weight: 700;
     color: #cc6540;
 }
@@ -128,7 +134,6 @@ nav nav-pills navbar-right {
 }
 img {
     width: 100%;
-    max-width: 100%;
     height: 100%;
 }
 hero {
@@ -154,6 +159,7 @@ hero {
 }
 .casestudycontent {
     padding: 1.0em;
+    float: inherit;
     text-align: left;
     max-width: 1200px;
     margin: 1.0em;
@@ -169,7 +175,7 @@ h1, h2, h3, h4 {
     }
 h1 {
     font-size: 2.75em;
-    font-weight: 500; '
+    font-weight: 500;
 }
 h2 {
     font-size: 2.25em;
@@ -187,10 +193,9 @@ a {
   color: #674DA8;
   text-decoration: none; /* No underlining */
 }
-a:hover,
-a: focus {
+a:hover, a:focus {
   color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
 }
 a:visited { /* visited link */
   color: #4E79B2;
@@ -237,14 +242,14 @@ a:active { /* selected link */
     background: #FFFFFF;
     margin: 0.5em;
 }
-.casestudy {
-  display: inline-block;
-  image-resolution: from-image;
-  padding: 1.0em;
+#casestudy {
+  padding: 0.75em;
+  padding-top: 4.0em;
 }
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
+  100% {fill: #f76414;}
   100% {fill: #f76414;}
 }
 .sun {
@@ -261,7 +266,7 @@ a:active { /* selected link */
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-    
+
 .navtoggle li:not(:last-child) {
   display: inline-block;
 }
@@ -283,7 +288,7 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 .navtoggle li:last-child {
-  display: none;
+display: none;
 }
 }
 /*new nav test*/
